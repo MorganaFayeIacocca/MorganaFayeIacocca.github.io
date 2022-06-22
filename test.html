@@ -12,9 +12,9 @@
 		<link rel="styleSheet" href="src/css/style.css">
 	</head>
 <body>
-	<nav class="navbar" id="navBar">
+	<nav class="navbar">
 		<div class="navbarContainer" id="topBar">
-			<a class="navbarLogo" href="/" id="navbarLogo"><p>Morgana Faye Iacocca</p></a>
+			<a href="/" id="navbarLogo"><p>Morgana Faye Iacocca</p></a>
 			<div class="navbarToggle" id="mobileMenu">
 				<span class="bar">	
 				</span>
@@ -61,16 +61,16 @@
 							</label>
 						</li>
 						<li class="toggleFeature">
-							<div class="toggleTitle"><p>Bionic Reading</p></div>
+							<div class="toggleTitle"><p>Neurodivergent-Friendly Font</p></div>
 							<label class="switch">
-								<input type="checkbox" id="neurodivergentStatus" onclick="toggleAllNeurodivergent()">
+								<input type="checkbox" id="neurodivergentStatus" onclick="activateAllNeurodivergentFont('p')">
 								<span class = "slider round"></span>
 							</label>
 						</li>
 						<li class="toggleFeature">
 							<div class="toggleTitle"><p>Dark Mode</p></div>
 							<label class="switch">
-								<input type="checkbox" id="darkmodeStatus" onclick="toggleDarkMode()">
+								<input type="checkbox" id="darkmodeStatus" onclick="toggleDyslexicFont('topBar')">
 								<span class = "slider round"></span>
 							</label>
 						</li>
@@ -80,36 +80,19 @@
 		</div>
 	</nav>
 
-	<!-- Hero section??? -->
+	<!-- Webpage Body -->
 	<div class="main">
 		<div class="mainContainer">
 			<div class="mainContent">
-				<h1> H1 example</h1>
-				<h2> H2 example</h2>
-				<p>	See what p looks like</p>
+				<p> this is the test page woot woot!!</p>
 			</div>
 		</div>
 	</div>
+	<button type="button" onclick="toggleDyslexicFont('topBar')">Change Font</button>
 	<div class="pageBody" id="pageBody">
 		<p>This is my <br> test </p>
 		<h1><hr id="hr"></h1> 
 		<p>text </p> 
-		<h3> <br> dasf  <br>  <br>  <br>  <br>  <br>sdf <br>sd <br>sd <br>sd</h3><br>
-		asdasdasd <br>
-		<br>
-		<br>
-		<br>
-		<br>sdf
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		sdfsdf
-		<br>
-		sdsdfsdf
-		<br> <br>sdfsdf
-		<br> <br>
 	</div>
 	<hr id="hr2">
 	<h1> this is another test, but look above at the other too</h1>
