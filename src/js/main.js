@@ -1,12 +1,8 @@
 const menu = document.querySelector('#mobileMenu');
-const menuLinks = document.querySelector('.navbarMenu');
 
 menu.addEventListener('click', function(){
     menu.classList.toggle('isActive');
-    menuLinks.classList.toggle('active');
-    if(localStorage.darkModeStored == "True"){
-        menuLinks.classList.toggle('darkModeActive');
-    }
+    document.getElementById('navbarMenu').classList.toggle('active');
 });
 
 if(localStorage.darkModeStored){
@@ -28,12 +24,12 @@ if(localStorage.fontChosen){
         document.getElementById("dyslexicStatus").checked = true;
     }
     else{
-        setAllFont('Arial');
+        setAllFont('Georgia');
     }
 }
 else{
-    setAllFont('Arial');
-    localStorage.fontChosen = 'Arial';
+    setAllFont('Georgia');
+    localStorage.fontChosen = 'Georgia';
 }
 
 if(localStorage.neurodivergent){
@@ -52,8 +48,8 @@ else{
 
 function toggleAllDyslexic(){
     if(localStorage.fontChosen == 'openDyslexic'){
-        localStorage.fontChosen = 'Arial';
-        setAllFont('Arial');
+        localStorage.fontChosen = 'Georgia';
+        setAllFont('Georgia');
     }
     else{
         localStorage.fontChosen = 'openDyslexic';
@@ -89,6 +85,7 @@ function activateAllNeurodivergentFont(){
 }
 
 function setAllFont(font){
+    setFont('a', font);
     setFont('p', font);
     setFont('h1', font);
     setFont('h2', font);
@@ -175,6 +172,29 @@ function darkModeStartup(){
     for(var i = 0; i<toggleTitles.length; i++){
         toggleTitles[i].classList.toggle("darkToggleTitle");
     }
+    navbarMenus = document.getElementsByClassName("navbarMenu");
+    for(var i = 0; i<navbarMenus.length; i++){
+        navbarMenus[i].classList.toggle("darkNavbarMenu");
+    }
+    myLinks = document.getElementsByClassName("contactLinks");
+    for(var i = 0; i<myLinks.length; i++){
+        myLinks[i].classList.toggle("darkContactLinks");
+    }
+    document.getElementById("bioBar").classList.toggle("darkBioBar")
+    myImageLabels = document.getElementsByClassName("embeddedImageLabel");
+    for(var i = 0; i<myImageLabels.length; i++){
+        myImageLabels[i].classList.toggle("darkEmbeddedImageLabel");
+    }
+    myBioTitles = document.getElementsByClassName("bioTitle");
+    for(var i = 0; i<myBioTitles.length; i++){
+        myBioTitles[i].classList.toggle("darkBioTitle");
+    }
+    
+    document.getElementById("footer").classList.toggle("darkBottomBar")
+    myPageBodies = document.getElementsByClassName("pageBody");
+    for(var i = 0; i<myPageBodies.length; i++){
+        myPageBodies[i].classList.toggle("darkPageBody");
+    }
 }
 
 
@@ -206,14 +226,34 @@ function toggleDarkMode(){
     for(var i = 0; i<toggleTitles.length; i++){
         toggleTitles[i].classList.toggle("darkToggleTitle");
     }
+    navbarMenus = document.getElementsByClassName("navbarMenu");
+    for(var i = 0; i<navbarMenus.length; i++){
+        navbarMenus[i].classList.toggle("darkNavbarMenu");
+    }
+    myLinks = document.getElementsByClassName("contactLinks");
+    for(var i = 0; i<myLinks.length; i++){
+        myLinks[i].classList.toggle("darkContactLinks");
+    }
+    document.getElementById("bioBar").classList.toggle("darkBioBar")
+    myImageLabels = document.getElementsByClassName("embeddedImageLabel");
+    for(var i = 0; i<myImageLabels.length; i++){
+        myImageLabels[i].classList.toggle("darkEmbeddedImageLabel");
+    }
+    myBioTitles = document.getElementsByClassName("bioTitle");
+    for(var i = 0; i<myBioTitles.length; i++){
+        myBioTitles[i].classList.toggle("darkBioTitle");
+    }
+    document.getElementById("footer").classList.toggle("darkBottomBar")
+    myPageBodies = document.getElementsByClassName("pageBody");
+    for(var i = 0; i<myPageBodies.length; i++){
+        myPageBodies[i].classList.toggle("darkPageBody");
+    }
 
     if(localStorage.darkModeStored == "True"){
         localStorage.darkModeStored = "False";
-        menuLinks.classList.toggle('darkModeActive');
     }
     else{
         localStorage.darkModeStored = "True";
-        menuLinks.classList.toggle('darkModeActive');
     }
     //document.querySelector('.navbarMenu').classList.toggle('darkModeActive');
 

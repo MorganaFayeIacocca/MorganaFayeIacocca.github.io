@@ -6,10 +6,11 @@
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>
-			Morgana Home
+			About Me
 		</title>
 		<link rel="styleSheet" href="src/css/normalize.css">
 		<link rel="styleSheet" href="src/css/style.css">
+		<script src="https://kit.fontawesome.com/224844d4be.js" crossorigin="anonymous"></script>
 	</head>
 <body>
 	<nav class="navbar" id="navBar">
@@ -23,28 +24,38 @@
 				<span class="bar">
 				</span>
 			</div>
-			<ul class="navbarMenu">
+			<ul class="navbarMenu"  id="navbarMenu">
 				<li class="navbarItem">
 					<a href="/" class="navbarLinks"><p>Home</p></a>
 					<span class="bar1">
 					</span>
 				</li>
-				<li class="navbarItem">
-					<a href="/test.html" class="navbarLinks"><p>Test</p></a>
+                <li class="navbarItem">
+					<a href="./Pages/missionStatement.html" class="navbarLinks"><p>Mission Statement</p></a>
 					<span class="bar1">
 					</span>
 				</li>
 				<li class="navbarItem">
-					<a href="/test.html" class="navbarLinks"><p>About Me</p></a>
+					<a href="./Pages/research.html" class="navbarLinks"><p>Research</p></a>
+					<span class="bar1">
+					</span>
+				</li>
+				<li class="navbarItem">
+					<a href="./Pages/coursework.html" class="navbarLinks"><p>Coursework</p></a>
 					<span class="bar1"></span>
 				</li>
-				<li class="navbarItem">
-					<a href="/test.html" class="navbarLinks"><p>Art</p></a>
+				<!--<li class="navbarItem">
+					<a href="./Pages/cv.html" class="navbarLinks"><p>CV</p></a>
+					<span class="bar1">
+					</span>
+				</li>-->
+                <li class="navbarItem">
+					<a href="./Pages/projectsAndPresentations.html" class="navbarLinks"><p>Projects & Presentations</p></a>
 					<span class="bar1">
 					</span>
 				</li>
 				<li class="navbarItem">
-					<a href="/test.html" class="navbarLinks"><p>Projects</p></a>
+					<a href="./Pages/hobbies.html" class="navbarLinks"><p>Hobbies</p></a>
 					<span class="bar1">
 					</span>
 				</li>
@@ -81,40 +92,51 @@
 	</nav>
 
 	<!-- Hero section??? -->
-	<div class="main">
-		<div class="mainContainer">
-			<div class="mainContent">
-				<h1> H1 example</h1>
-				<h2> H2 example</h2>
-				<p>	See what p looks like</p>
-			</div>
+	<div class="pageBody" id="pageBody">
+		<div class="bioBar" id="bioBar">
+			<a href= "/" class="profilePicContainer">
+				<img class="profilePic" src="../Assets/ProfilePic.jpg" alt="Morgana Iacocca">
+			</a>
+			<a href= "/" class="bioTitle">
+				<p style="font-size: large;">Morgana Iacocca</p>
+				<div style="height: 5px;"></div>
+				<p style="font-size: 12pt; padding-left: 30px;">(She/They)</p>
+				<div style="height: 5px;"></div>
+				<p style="font-size: 10pt; display: block; padding-left: 30px;">Undergraduate at the University of Pittsburgh</p>
+				<div style="height: 10px;"></div>
+			</a>
+			<a class="contactLinks" href="mailto:mii25@pitt.edu">
+				<i class="fa-solid fa-envelope" style="font-size: 16pt;"></i>
+				<p>Email</p>
+			</a>
+			<div style="height: 10px;"></div>
+			<a class="contactLinks" href="https://github.com/MorganaFayeIacocca">
+				<i class="fa-brands fa-github" style="font-size: 16pt;"></i>
+				<p>Github</p>
+			</a>
+			<div style="height: 10px;"></div>
+			<a class="contactLinks" href="https://www.linkedin.com/in/morgana-iacocca/">
+				<i class="fa-brands fa-linkedin" style="font-size: 16pt;"></i>
+				<p>LinkedIn</p>
+			</a>
+		</div>
+		<div class="pageContent">
+			<h1> About Me</h1>
+			<div class="pageParagraph"><p> 
+				I am an undergraduate student at the University of Pittsburgh, about to enter my 5th year.
+				I am pursuing two bachelors degrees simultaneously: one in Computer Engineering and another in Physics & Astronomy, with a certificate in nanotechnology
+			</p></div>
 		</div>
 	</div>
-	<div class="pageBody" id="pageBody">
-		<p>This is my <br> test </p>
-		<h1><hr id="hr"></h1> 
-		<p>text </p> 
-		<h3> <br> dasf  <br>  <br>  <br>  <br>  <br>sdf <br>sd <br>sd <br>sd</h3><br>
-		asdasdasd <br>
-		<br>
-		<br>
-		<br>
-		<br>sdf
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		sdfsdf
-		<br>
-		sdsdfsdf
-		<br> <br>sdfsdf
-		<br> <br>
+	<div class="footerContainer">
+		<footer>
+			<div class="bottomBar" id="footer">
+				<p>
+					© 2022 Morgana Iacocca
+				</p>
+			</div>
+		</footer>
 	</div>
-	<hr id="hr2">
-	<h1> this is another test, but look above at the other too</h1>
-	<button type="button" onclick="activateAllNeurodivergentFont('h1')">Change All H1</button>
-	<button type="button" onclick="darkMode()">DarkMode</button>
 	<script src="src/js/main.js"></script>
 </body>
 </html>

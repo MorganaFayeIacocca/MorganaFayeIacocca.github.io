@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			Hobbies
+		</title>
+		<link rel="styleSheet" href="../src/css/normalize.css">
+		<link rel="styleSheet" href="../src/css/style.css">
+		<script src="https://kit.fontawesome.com/224844d4be.js" crossorigin="anonymous"></script>
+	</head>
+<body>
+	<nav class="navbar" id="navBar">
+		<div class="navbarContainer" id="topBar">
+			<a class="navbarLogo" href="/" id="navbarLogo"><p>Morgana Faye Iacocca</p></a>
+			<div class="navbarToggle" id="mobileMenu">
+				<span class="bar">	
+				</span>
+				<span class="bar">
+				</span>
+				<span class="bar">
+				</span>
+			</div>
+			<ul class="navbarMenu"  id="navbarMenu">
+				<li class="navbarItem">
+					<a href="../index.html" class="navbarLinks"><p>Home</p></a>
+					<span class="bar1">
+					</span>
+				</li>
+                <li class="navbarItem">
+					<a href="./missionStatement.html" class="navbarLinks"><p>Mission Statement</p></a>
+					<span class="bar1">
+					</span>
+				</li>
+				<li class="navbarItem">
+					<a href="./research.html" class="navbarLinks"><p>Research</p></a>
+					<span class="bar1">
+					</span>
+				</li>
+				<li class="navbarItem">
+					<a href="./coursework.html" class="navbarLinks"><p>Coursework</p></a>
+					<span class="bar1"></span>
+				</li>
+				<!--<li class="navbarItem">
+					<a href="./cv.html" class="navbarLinks"><p>CV</p></a>
+					<span class="bar1">
+					</span>
+				</li>-->
+                <li class="navbarItem">
+					<a href="./projectsAndPresentations.html" class="navbarLinks"><p>Projects & Presentations</p></a>
+					<span class="bar1">
+					</span>
+				</li>
+				<li class="navbarItem">
+					<a href="./hobbies.html" class="navbarLinks"><p>Hobbies</p></a>
+					<span class="bar1">
+					</span>
+				</li>
+				<div class="accessibilityFeatures">
+					<span><p>Accessibility</p></span>
+					<span class="bar1">
+					</span>
+					<div class="accessibilityContent">
+						<li class="toggleFeature">
+							<div class="toggleTitle"><p>Dyslexia-Friendly Font</p></div>
+							<label class="switch">
+								<input type="checkbox" id="dyslexicStatus" onclick="toggleAllDyslexic()">
+								<span class = "slider round"></span>
+							</label>
+						</li>
+						<li class="toggleFeature">
+							<div class="toggleTitle"><p>Bionic Reading</p></div>
+							<label class="switch">
+								<input type="checkbox" id="neurodivergentStatus" onclick="toggleAllNeurodivergent()">
+								<span class = "slider round"></span>
+							</label>
+						</li>
+						<li class="toggleFeature">
+							<div class="toggleTitle"><p>Dark Mode</p></div>
+							<label class="switch">
+								<input type="checkbox" id="darkmodeStatus" onclick="toggleDarkMode()">
+								<span class = "slider round"></span>
+							</label>
+						</li>
+					</div>
+				</div>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Hero section??? -->
+	<div class="pageBody" id="pageBody">
+		<div class="bioBar" id="bioBar">
+			<a href= "../index.html" class="profilePicContainer">
+				<img class="profilePic" src="../Assets/ProfilePic.jpg" alt="Morgana Iacocca">
+			</a>
+			<a href= "../index.html" class="bioTitle">
+				<p style="font-size: large;">Morgana Iacocca</p>
+				<div style="height: 5px;"></div>
+				<p style="font-size: 12pt; padding-left: 30px;">(She/They)</p>
+				<div style="height: 5px;"></div>
+				<p style="font-size: 10pt; display: block; padding-left: 30px;">Undergraduate at the University of Pittsburgh</p>
+				<div style="height: 10px;"></div>
+			</a>
+			<a class="contactLinks" href="mailto:mii25@pitt.edu">
+				<i class="fa-solid fa-envelope" style="font-size: 16pt;"></i>
+				<p>Email</p>
+			</a>
+			<div style="height: 10px;"></div>
+			<a class="contactLinks" href="https://github.com/MorganaFayeIacocca">
+				<i class="fa-brands fa-github" style="font-size: 16pt;"></i>
+				<p>Github</p>
+			</a>
+			<div style="height: 10px;"></div>
+			<a class="contactLinks" href="https://www.linkedin.com/in/morgana-iacocca/">
+				<i class="fa-brands fa-linkedin" style="font-size: 16pt;"></i>
+				<p>LinkedIn</p>
+			</a>
+		</div>
+		<div class="pageContent">
+			<h2> Hobbies</h2>
+		</div>	
+	</div>
+	<div class="footerContainer">
+		<footer>
+			<div class="bottomBar" id="footer">
+				<p>
+					© 2022 Morgana Iacocca
+				</p>
+			</div>
+		</footer>
+	</div>
+	<script src="../src/js/main.js"></script>
+</body>
+</html>
