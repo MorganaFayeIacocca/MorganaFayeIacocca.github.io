@@ -475,6 +475,8 @@ input:checked + .slider:before {
     font-size: 1.2rem;
     padding-top: 3rem;
     padding-left: 3em;
+    padding-bottom: 3rem;
+    padding-right: 3em;
 }
 
 .navbarItem:hover .bar1{
